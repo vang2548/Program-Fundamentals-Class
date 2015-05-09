@@ -1,0 +1,78 @@
+li {
+  display: inline;
+}
+table {
+  width: 80%;
+}
+table,
+td,
+th {
+  border: 1px solid #4B4B47;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#myTab tr:first-child td {
+  background-color: grey;
+}
+th {
+  color: black;
+  background-color: grey;
+}
+body {
+  background-color: #474747;
+  margin: 100px 0;
+}
+#wrapper {
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 5px 5px 5px black;
+  margin: auto;
+  padding: 0 0 15px 0;
+  text-align: center;
+  width: 80%;
+}
+ol {
+  list-style: none;
+  padding: 0;
+}
+ol > li > label {
+  display: inline-block;
+  text-align: right;
+  width: 25%;
+}
+ol > li > input {
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px #888;
+  margin: 3px 25px 3px 25px;
+  width: 5%;
+}
+input {
+  border: none;
+  margin: 0;
+  text-align: center;
+  width: 80%;
+}
+h1 {
+  color: black;
+  font: 80px 'Museo700';
+  opacity: 0.3;
+  text-align: center;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+#outputArea {
+  border-radius: 10px;
+  border-style: solid;
+}
+button{
+  background-color: #CFCFCF;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #595959;
+  text-shadow:0 -1px 1px rgba(0,0,0,0.5);
+
+}
+p {
+  color: #BC1616;
+}

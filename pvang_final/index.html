@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Tire Comparison
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <h1>
+      Tire Comparison Calculator
+    </h1>
+    <div id="wrapper">
+      <h3>Input Tire Sizes Below</h3>
+      <p>
+        Example: <em>Tire Size 185/60r14, input width(185) in first box, Aspect Ratio(60) in second box, Wheel Diamter(14) in third box.</em>
+      </p>
+      <form id="TireCalculatorForm">
+        <ol>
+          <li>
+            <label>
+            <strong>Current Tire Size</strong>
+            </label>
+          </li>
+          <li>
+            <input id="tireWidthField" type="tel" maxlength="3" size="4" required>
+            /
+          </li>
+          <li>
+            <input id="tireRatioField" type="tel" maxlength="2" size="4" required>
+            /
+          </li>
+          <li>
+            <input id="tireDiameterField" type="tel" maxlength="2" size="4" required>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <label>
+            <strong>Tire Size to Compare</strong>
+            </label>
+          </li>
+          <li>
+            <input id="compareTireWidthField" type="tel" maxlength="3" size="4" required>
+            /
+          </li>
+          <li>
+            <input id="compareTireRatioField" type="tel" maxlength="2" size="4" required>
+            /
+          </li>
+          <li>
+            <input id="compareTireDiameterField" type="tel" maxlength="2" size="4" required>
+          </li>
+        </ol>
+      </form>
+        <p>
+          <button id="comparison" onclick="action()" type="button">Compare Tires</button> 
+        </p>
+        <p>
+          All Fields must be filled in before retrieving specs.
+        </p>
+      <table>
+        <tr>
+          <th>
+            Tire Size
+          </th>
+          <th>
+            Diameter
+          </th>
+          <th>
+            Sidewall Width
+          </th>
+          <th>
+            Sidewall Height
+          </th>
+          <th>
+            Circumference
+          </th>
+          <th>
+            Radius
+          </th>
+          <th>
+            Revs Per Mile
+          </th>
+        </tr>
+        <tr>
+          <td id="currentTireOutput">
+            0
+          </td>
+          <td id="currentDiameterOutput">
+            0
+          </td>
+          <td id="currentSidewallOutput">
+            0
+          </td>
+          <td id="currentAspectRatioOutput">
+            0
+          </td>
+          <td id="currentCircumferenceOutput">
+            0
+          </td>
+          <td id="currentRadiusOutput">
+            0
+          </td>
+          <td id="currentRevPerMileOutput">
+            0
+          </td>
+        </tr>
+        <tr>
+          <td id="comparedTireOutput">
+            0
+          </td>
+          <td id="comparedDiameterOutput">
+            0
+          </td>
+          <td id="comparedSidewallOutput">
+            0
+          </td>
+          <td id="comparedAspectRatioOutput">
+            0
+          </td>
+          <td id="comparedCircumferenceOutput">
+            0
+          </td>
+          <td id="comparedRadiusOutput">
+            0
+          </td>
+          <td id="comparedRevPerMileOutput">
+            0
+          </td>
+        </tr>
+      </table>
+      <p>
+        Click Speed Difference Button to view Speed Differences of the two tire sizes entered above.
+      </p>
+      <p>
+        <button id="click" type="button">
+        Compatible Tires
+        </button>
+        <button onclick="myTable.innerHTML = ''" type="button">
+        Clear Table 
+        </button>
+        <button id="speedDifference" type="button">
+        Speed Difference
+        </button>
+        <button onclick="speed.innerHTML = ''" type="button">
+        Clear Speed
+        </button>
+      </p>
+      <p>
+        <output id="speed">
+        </output>
+      </p>
+      <div id="myTable">
+        Click "Compatabile Tires" To Find Compatible Tires in Different Sizes.
+      </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/tireCalculator.js"></script>
+<script src="js/tireChart.js"></script>
+<script src="js/tireSearch.js"></script>
+<script src="js/speedError.js"></script>
+
+  </body>
+</html>
